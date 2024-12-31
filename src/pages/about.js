@@ -42,14 +42,14 @@ const about = () => {
             <title>Ankit Kumar | About Page</title>
             <meta name='description' content='any description'></meta>
         </Head>
-        <main className='flex w-full flex-col items-center justify-center'>
+        <main className='flex w-full flex-col items-center justify-center dark:text-light'>
 
             <Layout className='pt-16'>
                 <AnimatedText text={"Passion Fuels Purpose!"} className='!text-8xl !text-center mb-16'/>
                 <div className='grid w-full grid-cols-8 gap-16'>
 
                     <div className='col-span-3 flex flex-col items-start justify-start gap-3'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>About Me</h2>
+                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>About Me</h2>
                         <p className='font-medium text-base'>Hello and welcome to my portfolio!</p>
                         <p className='font-medium text-sm'>
                         I'm Ankit Kumar, a passionate and aspiring web developer dedicated to creating dynamic, responsive, and user-friendly websites. My journey into web development began with a curiosity to understand how the web works, and it quickly grew into a deep passion for designing and building digital experiences.
@@ -64,7 +64,7 @@ const about = () => {
                         Thank you for visiting, and feel free to explore my work.</p>
                     </div>
 
-                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 shadow-[8px_8px_0_5px_rgba(27,27,27)]'>
+                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 shadow-[8px_8px_0_5px_rgba(27,27,27)] dark:bg-dark dark:border-light dark:shadow-[8px_8px_0_5px_rgba(245,245,245)]'>
                             <Image src={profileimage} alt='profile' className='w-full h-auto rounded-2xl'/>
                     </div>
 
@@ -73,7 +73,7 @@ const about = () => {
                             <span className='inline-block text-7xl font-bold'>
                                 <AnimatedNumbers value={15}/>+
                            </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>Projects Completed</h2>
+                            <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>Projects Completed</h2>
                         </div>
                     </div>
 
