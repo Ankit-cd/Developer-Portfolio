@@ -22,7 +22,7 @@ const Education = () => {
         transition={{duration:1,type:"spring"}}
        className='flex flex-col gap-2'>
         <h3 className='capitalize font-bold text-2xl whitespace-nowrap'>{education}</h3>
-        <span className='capitalize font-medium text-dark/75'>
+        <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
           {time} | {address}
         </span>
       </motion.div>
@@ -37,7 +37,7 @@ const Education = () => {
 
           <motion.div 
             style={{scaleY:scrollYProgress}}
-            className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light'/>
+            className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-primaryDark dark:shadow-primaryDark dark:shadow-md'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
               <Details education={"B.Tech In Electronics and Communication Engineering(ECE)"} time={"2019-2023"} address={"Netaji Subhash Institute of Technology (East Campus)"}/>
               <Details education={"CBSE 12th Standard"} time={"Passed-2019"} address={"Govt. Sarvodaya Co.Ed Vidyalaya"}/>

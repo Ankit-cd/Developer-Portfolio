@@ -14,17 +14,27 @@ import planimage from "../../public/images/projects/planimage.jpeg";
 
 const FeaturedProject = ({ type, title, summary, image, link, github }) => {
   return (
-    <article className="w-full flex items-center rounded-3xl border border-solid border-dark bg-light drop-shadow-2xl shadow-[8px_8px_0_5px_rgba(27,27,27)] p-10">
+    <article className="w-full flex items-center rounded-3xl border border-solid border-dark bg-light dark:bg-dark dark:border-light drop-shadow-2xl shadow-[8px_8px_0_5px_rgba(27,27,27)] dark:shadow-[8px_8px_0_5px_rgba(245,245,245)] p-10">
       <Link
         href={link}
         target="_blank"
-        className="cursor-pointer overflow-hidden flex-1  rounded-lg"
+        className="cursor-pointer overflow-hidden flex-1 rounded-lg"
       >
-        <Image src={image} alt={title} className="w-full h-auto hover:scale-105 transition delay-100 ease-linear" />
+        <Image
+          src={image}
+          alt={title}
+          className="w-full h-auto hover:scale-105 transition delay-100 ease-linear"
+          priority
+          sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                50vw"
+        />
       </Link>
 
       <div className="flex flex-1 flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-2xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-2xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -33,7 +43,9 @@ const FeaturedProject = ({ type, title, summary, image, link, github }) => {
           <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
         </Link>
 
-        <p className="my-2 font-medium text-dark text-start">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light text-start">
+          {summary}
+        </p>
 
         <div className="mt-10 flex items-center ">
           <Link href={github} target="_blank" className="w-10">
@@ -42,7 +54,7 @@ const FeaturedProject = ({ type, title, summary, image, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light px-6 p-2 text-lg font-semibold"
+            className="ml-4 rounded-lg bg-dark text-light dark:bg-light dark:text-dark px-6 p-2 text-lg font-semibold"
           >
             Visit Project
           </Link>
@@ -54,17 +66,23 @@ const FeaturedProject = ({ type, title, summary, image, link, github }) => {
 
 const Project = ({ type, title, image, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark drop-shadow-2xl shadow-[8px_8px_0_5px_rgba(27,27,27)] bg-light p-6 relative">
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark dark:border-light drop-shadow-2xl shadow-[8px_8px_0_5px_rgba(27,27,27)] dark:shadow-[8px_8px_0_5px_rgba(245,245,245)] bg-light dark:bg-dark p-6 relative">
       <Link
         href={link}
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={image} alt={title} className="w-full h-[300px] hover:scale-105 transition delay-100 ease-linear" />
+        <Image
+          src={image}
+          alt={title}
+          className="w-full h-[300px] hover:scale-105 transition delay-100 ease-linear"
+        />
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -97,7 +115,7 @@ const projects = () => {
         <title>Ankit Kumar | Projects Page</title>
         <meta name="description" content="project description" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text={"Code Meets Design!!"}
