@@ -55,15 +55,15 @@ const about = () => {
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 md:mx-auto'>About Me</h2>
                         <p className='font-medium text-base'>Hello and welcome to my portfolio!</p>
                         <p className='font-medium text-sm'>
-                        I'm Ankit Kumar, a passionate and aspiring web developer dedicated to creating dynamic, responsive, and user-friendly websites. My journey into web development began with a curiosity to understand how the web works, and it quickly grew into a deep passion for designing and building digital experiences.
+                        I am Ankit Kumar, a passionate and aspiring web developer dedicated to creating dynamic, responsive, and user-friendly websites. My journey into web development began with a curiosity to understand how the web works, and it quickly grew into a deep passion for designing and building digital experiences.
                         This portfolio showcases my skills, projects, and journey as a web developer.
                         </p>
-                        <p className='font-medium text-sm'>Here's what you'll find:</p>
-                        <p className='font-medium text-sm'> <span className='font-semibold'>Projects: &nbsp;</span> A collection of websites and applications I've built, showcasing my work with technologies like HTML, CSS, JavaScript, and frameworks such as React.</p>
+                        <p className='font-medium text-sm'>This Portfolio contains:</p>
+                        <p className='font-medium text-sm'> <span className='font-semibold'>Projects: &nbsp;</span> A collection of websites and applications I have built, showcasing my work with technologies like HTML, CSS, JavaScript, and frameworks such as React.</p>
                         <p className='font-medium text-sm'><span className='font-semibold'>Skills: &nbsp;</span>My growing proficiency in front-end and back-end development tools, as well as design principles.</p>
                         <p className='font-medium text-sm'> <span className='font-semibold'>About Me: &nbsp;</span>Insights into my journey, interests, and what motivates me as a developer.</p>
 
-                        <p className='font-medium text-sm'>I'm constantly learning and exploring new technologies, so this portfolio will keep evolving with fresh ideas and projects.
+                        <p className='font-medium text-sm'>I am constantly learning and exploring new technologies, so this portfolio will keep evolving with fresh ideas and projects.
                         Thank you for visiting, and feel free to explore my work.</p>
                     </div>
 
